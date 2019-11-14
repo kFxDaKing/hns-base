@@ -4,6 +4,9 @@
 --                 Client
 -----------------------------------------
 
+-- Constants and Globals
+isInGame =  false -- True if currently in a game, false otherwise (lobby)
+
 RegisterNetEvent('asc:startLobby')
 AddEventHandler('asc:startLobby', function()
 
