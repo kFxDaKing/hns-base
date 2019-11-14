@@ -8,10 +8,10 @@ print('============ [ Ascent Gaming ] ============')
 print(" Starting Ascent Hide n' Seek")
 
 -- Constants and Globals
-GAME_MAX_TIME  = 600    -- Seconds : 10 Minutes
-LOBBY_MAX_TIME = 30     -- Seconds : .5 Minutes
-gameTime       = 0      -- How much time has passed in the current game?
-gameInProgress = false  -- Is a game in progress? If false, a game is not = lobby.
+GAME_MAX_TIME  = Config.GameTime    --
+LOBBY_MAX_TIME = Config.LobbyTime   --
+gameTime       = 0                  -- How much time has passed in the current game?
+gameInProgress = false              -- Is a game in progress? If false, a game is not = lobby.
 
 AddEventHandler('es:firstSpawn', function(source, user)
     
