@@ -34,9 +34,9 @@ Citizen.CreateThread(function()
         gameTime++
 
         -- Game ends
-        if gameTime == GAME_MAX_TIME and gameInProgress then
+        if gameTime == GAME_MAX_TIME and gameInProgress then -- a game's time limit has been reached and is in progress
             gameInProgress = false
-        else if gameTime == LOBBY_MAX_TIME and not gameInProgress
+        else if gameTime == LOBBY_MAX_TIME and not gameInProgress -- a lobby's time limit has been reached and a game is not in progress
             gameInProgress = true
         end
 
