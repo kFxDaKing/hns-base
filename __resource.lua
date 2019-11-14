@@ -5,7 +5,8 @@ description "Ascent Hide n' Seek Base Resource"
 ui_page
 
 client_scripts {
-    'client/main.lua'
+    'client/main.lua',
+    'config.lua'
 }
 
 server_scripts {
