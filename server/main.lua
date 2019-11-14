@@ -33,11 +33,12 @@ Citizen.CreateThread(function()
     while true do
         gameTime++
 
-        -- Game ends
         if gameTime == GAME_MAX_TIME and gameInProgress then -- a game's time limit has been reached and is in progress
             gameInProgress = false
-        else if gameTime == LOBBY_MAX_TIME and not gameInProgress -- a lobby's time limit has been reached and a game is not in progress
+            gameTime = 0
+        else if gameTime == LOBBY_MAX_TIME and not gameInProgress then -- a lobby's time limit has been reached and a game is not in progress
             gameInProgress = true
+            gameTime = 0
         end
 
         -- gameTime = number of seconds passed for current gameStatus; gameStatus = true game is in progress, false game is not (lobby)
