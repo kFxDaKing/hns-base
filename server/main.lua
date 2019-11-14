@@ -8,7 +8,7 @@ print('============ [ Ascent Gaming ] ============')
 print(" Starting Ascent Hide n' Seek")
 
 -- Constants and Globals
-GAME_MAX_TIME  = 600 -- Seconds : 10 Minutes
+GAME_MAX_TIME  = 600    -- Seconds : 10 Minutes
 gameTime       = 0      -- How much time has passed in the current game?
 gameInProgress = false  -- Is a game in progress? If false, a game is not = lobby.
 
@@ -30,17 +30,17 @@ end)
 
 Citizen.CreateThread(function()
     while true do
-
         gameTime++
 
         -- Game ends
         if gameTime == GAME_MAX_TIME then
-
-
-
+            gameInProgress = false
+        else
+            gameInProgress = true
         end
 
-        Citizen.Wait(1000) -- One Second
+        TriggerClientEvent('asc:doUpdateGame', -1, gameTime, gameInProgress)
 
+        Citizen.Wait(1000) -- One Second
     end
 end)
