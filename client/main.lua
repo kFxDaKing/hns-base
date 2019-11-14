@@ -13,3 +13,8 @@ RegisterNetEvent('asc:startGame')
 AddEventHandler('asc:startGame', function()
 
 end)
+
+RegisterNetEvent('asc:doUpdateGame')
+AddEventHandler('asc:doUpdateGame', function(gameTime, gameStatus)
+
+end)
