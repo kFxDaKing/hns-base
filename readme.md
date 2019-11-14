@@ -6,7 +6,7 @@ Coming soon?
 
 ## Description
 
-Hide and Seek gamemode for [GTA](https://www.rockstargames.com/V/) [FiveM](https://fivem.net/).
+A Hide and Seek gamemode for [GTA](https://www.rockstargames.com/V/) [FiveM](https://fivem.net/) built using the [EssentialMode](https://github.com/kanersps/essentialmode).
 
 One player is randomly choosen to act as the **Seeker**. They will have a police car and must look throughout a designated area for players on the **Hidden** team.
 
@@ -52,4 +52,8 @@ Follow the above steps, substitute this for step 2:
 
 Make sure the following resources are installed and refrenced **before** `hns-base`.
 
+This resource uses existing open-source resources; modified specificly for Ascent Gaming. I advise you use the links below unless you're willing to fix-around errors and issues.
+
 * [**EssentialMode**](https://github.com/kanersps/essentialmode) - Kane
+* [**BaseEvents**](https://github.com/citizenfx/cfx-server-data/tree/master/resources/%5Bsystem%5D/baseevents) - CitizenFX Team
+* [**Chat**](https://github.com/Ascent-Gaming/citizenfx-chat) - Ascent & CitizenFX Teams
