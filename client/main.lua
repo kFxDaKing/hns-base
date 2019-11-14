@@ -5,7 +5,9 @@
 -----------------------------------------
 
 -- Constants and Globals
-isInGame =  false -- True if currently in a game, false otherwise (lobby)
+GAME_MAX_TIME    = 600      -- Seconds : 10 Minutes
+LOBBY_MAX_TIME   = 30       -- Seconds : .5 Minutes
+isInGame         =  false   -- True if currently in a game, false otherwise (lobby)
 
 RegisterNetEvent('asc:startLobby')
 AddEventHandler('asc:startLobby', function()
