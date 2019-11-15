@@ -12,11 +12,6 @@ GAME_MAX_TIME  = Config.GameTime    --
 LOBBY_MAX_TIME = Config.LobbyTime   --
 gameTime       = 0                  -- How much time has passed in the current game?
 gameInProgress = false              -- Is a game in progress? If false, a game is not = lobby.
-ESX            = nil                -- Resource-shared ESX object
-
-TriggerEvent('esx:getSharedObject', function(obj)
-    ESX = obj
-end)
 
 AddEventHandler('es:firstSpawn', function(source, user)
     
